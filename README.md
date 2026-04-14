@@ -21,10 +21,12 @@ The core of this repository is a modular pipeline designed for memory efficiency
 
 ### 🌍 1. Global Emissions Distribution
 ![Global Emissions Map](map.png)
+
 **Insight:** Emissions hotspots are concentrated in major industrial hubs. The US, and China show the highest cumulative corporate footprints in this dataset.
 
 ### 🏭 2. Sector-Wise Carbon Intensity
 ![Sector Bar Chart](bar_chart.png)
+
 **Insight:** While the **Energy** sector produces the highest volume, the **Utilities** sector leads in **Carbon Intensity** (emissions per $1M revenue), highlighting a critical area for efficiency improvements.
 
 ### 📈 3. Revenue vs. Emissions Drill-down
@@ -36,6 +38,16 @@ The core of this repository is a modular pipeline designed for memory efficiency
 1. Clone the repo.
 2. Ensure `pandas`, `plotly`, and `pyarrow` are installed.
 3. Run the main pipeline script to generate `processed_emissions.parquet`.
+#### A. Predictive Imputation
+Instead of using a simple median to fill gaps (what we did for revenue), you can use the features you just scaled to predict missing emission metrics.
 
-## 📜 License
-This project is licensed under the MIT License.
+Goal: Use sector, revenue_usd_millions_scaled, and scope1_mt_co2e to predict total_ghg_emissions.
+
+Tool: Use Scikit-Learn to run a Random Forest Regressor or XGBoost.
+
+#### 2. K-Means Clustering (Unsupervised Learning)
+Stop relying on industry sectors defined by the companies. Let the data define them.
+
+Goal: Group companies based solely on their carbon_intensity_scaled and revenue_usd_millions_scaled.
+
+Outcome: You’ll likely find "Clusters" of high-polluters that span across different industries, which is a massive insight for ESG (Environmental, Social, and Governance) investors.
