@@ -21,7 +21,7 @@ The core of this repository is a modular pipeline designed for memory efficiency
 
 ### 🌍 1. Global Emissions Distribution
 ![Global Emissions Map](map.png)
-**Insight:** Emissions hotspots are concentrated in major industrial hubs. The US, China, and South Africa show the highest cumulative corporate footprints in this dataset.
+**Insight:** Emissions hotspots are concentrated in major industrial hubs. The US, and China show the highest cumulative corporate footprints in this dataset.
 
 ### 🏭 2. Sector-Wise Carbon Intensity
 ![Sector Bar Chart](bar_chart.png)
