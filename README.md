@@ -19,7 +19,12 @@ The core of this repository is a modular pipeline designed for memory efficiency
 
 ## 📊 Key Insights & Visualizations
 Utilizing **Plotly Express**, I developed a "Tableau-style" interactive suite:
-- **Global Hotspots**: A choropleth map identifying high-emission corporate hubs (USA, China, South Africa).
+### Global Hotspots
+![Global Emissions Map](map.png)
+*A choropleth map identifying high-emission corporate hubs (USA, China, South Africa).*
+### Corporate Drill-down
+![Emissions vs Revenue Scatter](scatter.png)
+*A logarithmic scatter plot mapping Revenue vs. Emissions to identify industry outliers and "Greenwashing" risks.*
 - **Sector Intensity**: Analysis revealing that while Energy has the highest volume, Utilities often lead in intensity per dollar.
 - **Logarithmic Drill-down**: A scatter plot mapping Revenue vs. Emissions to identify "Greenwashing" outliers.
 
