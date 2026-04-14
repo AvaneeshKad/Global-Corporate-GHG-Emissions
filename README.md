@@ -29,6 +29,7 @@ The core of this repository is a modular pipeline designed for memory efficiency
 
 ### 📈 3. Revenue vs. Emissions Drill-down
 ![Logarithmic Scatter Plot](scatter.png)
+
 **Insight:**  Using a logarithmic scale, we identify "Whale" polluters. The size of the bubble represents carbon intensity; larger bubbles indicate companies that are less efficient relative to their financial scale.
 
 ## 🚀 How to Run
