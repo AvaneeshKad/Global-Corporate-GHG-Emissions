@@ -17,16 +17,19 @@ The core of this repository is a modular pipeline designed for memory efficiency
 3. **Normalization**: Scaled features using Min-Max Normalization to prepare the dataset for Machine Learning.
 4. **Loading**: Exported to `.parquet` format for high-speed I/O and reduced memory footprint.
 
-## 📊 Key Insights & Visualizations
-Utilizing **Plotly Express**, I developed a "Tableau-style" interactive suite:
-### Global Hotspots
+## 📊 Analytical Dashboard & Insights
+
+### 🌍 1. Global Emissions Distribution
 ![Global Emissions Map](map.png)
-*A choropleth map identifying high-emission corporate hubs (USA, China, South Africa).*
-### Corporate Drill-down
-![Emissions vs Revenue Scatter](scatter.png)
-*A logarithmic scatter plot mapping Revenue vs. Emissions to identify industry outliers and "Greenwashing" risks.*
-- **Sector Intensity**: Analysis revealing that while Energy has the highest volume, Utilities often lead in intensity per dollar.
-- **Logarithmic Drill-down**: A scatter plot mapping Revenue vs. Emissions to identify "Greenwashing" outliers.
+**Insight:** Emissions hotspots are concentrated in major industrial hubs. The US, China, and South Africa show the highest cumulative corporate footprints in this dataset.
+
+### 🏭 2. Sector-Wise Carbon Intensity
+![Sector Bar Chart](bar_chart.png)
+**Insight:** While the **Energy** sector produces the highest volume, the **Utilities** sector leads in **Carbon Intensity** (emissions per $1M revenue), highlighting a critical area for efficiency improvements.
+
+### 📈 3. Revenue vs. Emissions Drill-down
+![Logarithmic Scatter Plot](scatter.png)
+**Insight:** Using a logarithmic scale, we identify "Whale" polluters. The size of the bubble represents carbon intensity; larger bubbles indicate companies that are less efficient relative to their financial scale.
 
 ## 🚀 How to Run
 1. Clone the repo.
